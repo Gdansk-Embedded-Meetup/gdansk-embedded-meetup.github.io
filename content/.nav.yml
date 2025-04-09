@@ -1,0 +1,7 @@
+nav:
+  - 🏠 Intro: index.md
+  - 🎤 Spotkania: events
+  - 💰 Sponsorzy: sponsors.md
+  - 🏷️ Tagi: tags.md
+  - 💪 Organizatorzy: organizers.md
+flatten_single_child_sections: true 

@@ -1,0 +1,91 @@
+site_name: Gdańsk Embedded Meetup
+site_description: Gdańsk Embedded Meetup
+site_author: Krzysztof Mazur
+site_url: https://gdansk-embedded-meetup.github.io
+
+repo_name: Gdansk-Embedded-Meetup/gdansk-embedded-meetup.github.io
+repo_url: https://github.com/Gdansk-Embedded-Meetup/gdansk-embedded-meetup.github.io
+edit_uri: edit/main/content/
+docs_dir: content
+site_dir: dist
+
+extra:
+  version: 1.0.0
+  locations:
+    starter:
+      name: Inkubator STARTER
+      address: Lęborska 3b, 80-386 Gdańsk
+    sztuka_wyboru:
+      name: Sztuka Wyboru
+      address: Juliusza Słowackiego 19, 80-257 Gdańsk
+  social:
+    - icon: fontawesome/brands/meetup
+      link: https://www.meetup.com/gda%C5%84sk-embedded-meetup/
+      name: Meetup
+    - icon: fontawesome/brands/github
+      link: https://github.com/Gdansk-Embedded-Meetup
+      name: GitHub
+  tags:
+    lightning-talk: lightning-talk
+    rust: rust
+    random: random
+
+
+theme:
+  name: material
+  custom_dir: "overrides/"
+  language: pl
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.integrate
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.prune
+  logo: static/icon.svg
+  favicon: static/icon.svg
+  icon:
+    tag:
+      default: fontawesome/solid/tag
+      random: fontawesome/solid/dice
+      lightning-talk: fontawesome/solid/bolt-lightning
+      rust: fontawesome/brands/rust
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - tags
+  - awesome-nav
+
+hooks:
+  - hooks.py
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: "#"
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.magiclink
+  - pymdownx.superfences
