@@ -27,6 +27,11 @@ Znajdziesz nas na tych platformach:
 
 [:fontawesome-brands-github: GitHub - kod tej strony i nie tylko](https://github.com/Gdansk-Embedded-Meetup)
 
+## Forum GitHub Discussions
+Masz pytania lub pomysły o których chcesz porozmawiać? Zajrzyj na nasze GitHub Discussions!
+
+[:fontawesome-brands-github: GitHub Discussions](https://github.com/Gdansk-Embedded-Meetup/gdansk-embedded-meetup.github.io/discussions){ .md-button }
+
 ## Jak zgłosić prezentację?
 
 Tematy prezentacji można zgłaszać przez [FORMULARZ](https://forms.gle/n2VGF7LKNtQV7RCX9)
