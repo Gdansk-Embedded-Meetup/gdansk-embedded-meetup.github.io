@@ -18,6 +18,9 @@ extra:
     sztuka_wyboru:
       name: Sztuka Wyboru
       address: Juliusza Słowackiego 19, 80-257 Gdańsk
+    nordea:
+      name: Olivia Star (Nordea)
+      address: Aleja Grunwaldzka 472C, Gdańsk
   social:
     - icon: fontawesome/brands/meetup
       link: https://www.meetup.com/gda%C5%84sk-embedded-meetup/
@@ -74,6 +77,9 @@ plugins:
 
 hooks:
   - hooks.py
+
+exclude_docs: |
+  README.md
 
 markdown_extensions:
   - admonition

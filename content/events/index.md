@@ -1,7 +1,5 @@
 ---
 title: Spotkania
-hide:
-  - footer
 template: event_list.html
 location: starter
 ---
