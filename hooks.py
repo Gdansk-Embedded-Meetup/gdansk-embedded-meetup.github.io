@@ -1,11 +1,8 @@
 import logging
-import subprocess
-import time
 import jinja2
 
-from pathlib import Path
+from textwrap import dedent
 from typing import Any
-from mkdocs.config.defaults import MkDocsConfig
 
 
 logger = logging.getLogger("mkdocs.hooks")
@@ -43,11 +40,49 @@ def transformPresentation(markdown, page, files, config):
     return markdown
 
 
+def transformEvent(markdown, page, files, config):
+    markdown += '\n## 🪧 Prezentacje: { data-toc-label="Prezentacje" }'
+    markdown += '\n<div class="events">'
+    for f in files:
+        if f.url.startswith(page.url) and f.url != page.url and f.page:
+            f.page.read_source(config)
+            if not f.page.meta.get("tags"):
+                # no tags means a presentation page that's actually a summary page with children, e.g. lightning talks session
+                continue
+            markdown += dedent(f"""
+                            <article class="event-article">
+                            <div>
+                                <h2>
+                                <a href="{f.url_relative_to(page.file)}">{f.page.title}</a>
+                                </h2>
+                            </div>
+                            </article>
+                            """)
+    markdown += "\n</div>"
+
+    if "photos" in page.meta:
+        folder = page.meta["photos"]
+        folder = folder.split("/")[-1].split("?")[0]
+        markdown += '\n##📸 Zdjęcia ze spotkania { #zdjecia data-toc-label="Zdjęcia" }'
+        markdown += f"\nWszystkie zdjęcia znajdziesz w [folderze Google Drive](https://drive.google.com/drive/folders/{folder})"
+        markdown += dedent(f"""
+                        <iframe id="drive-frame" src="https://drive.google.com/embeddedfolderview?id={folder}#grid"
+                            style="width:100%; aspect-ratio: 16 / 9; border:0; background-color: transparent; overflow-x:hidden;">
+                        </iframe>""")
+    return markdown
+
+
 def isPresentation(page):
     return page.meta.get("template") == "presentation.html"
+
+
+def isEvent(page):
+    return page.meta.get("template") == "event.html"
 
 
 def on_page_markdown(markdown, page, files, config, **kwargs):
     if isPresentation(page):
         return transformPresentation(markdown, page, files, config)
+    if isEvent(page):
+        return transformEvent(markdown, page, files, config)
     return markdown

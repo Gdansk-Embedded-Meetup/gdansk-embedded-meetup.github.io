@@ -5,6 +5,7 @@ location: starter
 template: event.html
 cover: static/cover.webp
 meetup_url: https://www.meetup.com/gda%C5%84sk-embedded-meetup/events/306895012/
+photos: https://drive.google.com/drive/folders/1Go8Y_4viH6nHKVUopsMY8PWQs5_0hWRK?usp=drive_link
 ---
 ## Szczegóły
 Zapraszamy na kolejne spotkanie Gdańsk Embedded Meetup!  

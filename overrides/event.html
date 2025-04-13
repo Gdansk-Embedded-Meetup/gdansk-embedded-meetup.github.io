@@ -58,34 +58,5 @@
 
 
 {{page.content}}
-<hr>
-<h2 id="prezentacje">
-  🪧 Prezentacje:<a class="headerlink" href="#prezentacje" title="Permanent link">#</a>
-</h2>
-<br>
-<!-- <hr> -->
-<div class="events">
-{% set index_files = pages
-  | selectattr('url', 'startswith', page.url)
-  | selectattr('src_uri', '!=', page.file.src_uri)
-  | selectattr('page.meta.tags')
-%}
 
-{% for file in index_files %}
-{% set page_url = file.page.url|url %}
-<article class="event-article">
-  <!-- <div class="event-cover">
-    <a href="{{ page_url }}">
-      <img src="{{ file.page.meta.cover|url }}" width="128">
-    </a>
-  </div> -->
-
-  <div>
-    <h2>
-      <a href="{{ page_url }}">{{ file.page.title }}</a>
-    </h2>
-  </div>
-</article>
-{% endfor %}
-</div>
 {% endblock %}
