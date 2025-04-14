@@ -32,7 +32,27 @@ extra:
     lightning-talk: lightning-talk
     rust: rust
     random: random
-
+    linux: linux
+    automotive: automotive
+    aerospace: aerospace
+    builds: builds
+    computer vision: computer-vision
+    communication: communication
+    debugging: debugging
+    security: security
+    AI: ai
+    best practices: best-practices
+    design: design
+    smart home: smart-home
+    clean code: clean-code
+    cloud: cloud
+    python: python
+    robots: robots
+    retro: retro
+    localization: localization
+    education: education
+    web: web
+    programming: programming
 
 theme:
   name: material
@@ -66,6 +86,27 @@ theme:
       random: fontawesome/solid/dice
       lightning-talk: fontawesome/solid/bolt-lightning
       rust: fontawesome/brands/rust
+      linux: fontawesome/brands/linux
+      automotive: fontawesome/solid/car-side
+      aerospace: fontawesome/solid/plane
+      builds: fontawesome/solid/screwdriver-wrench
+      computer-vision: fontawesome/solid/eye
+      communication: fontawesome/solid/satellite-dish
+      debugging: fontawesome/solid/bug-slash
+      security: fontawesome/solid/shield-halved
+      ai: fontawesome/solid/lightbulb
+      best-practices: fontawesome/solid/carrot
+      design: fontawesome/solid/paintbrush
+      smart-home: fontawesome/solid/house-signal
+      clean-code: fontawesome/solid/code-branch
+      cloud: fontawesome/solid/cloud
+      python: fontawesome/brands/python
+      robots: fontawesome/solid/robot
+      retro: fontawesome/solid/person-cane
+      localization: fontawesome/solid/location-dot
+      web: fontawesome/solid/globe
+      education: fontawesome/solid/user-graduate
+      programming: fontawesome/solid/code
 
 extra_css:
   - stylesheets/extra.css
