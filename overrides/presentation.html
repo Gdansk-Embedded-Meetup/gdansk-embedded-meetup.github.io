@@ -24,25 +24,6 @@
 <!-- Page content -->
 {{ page.content }}
 
-{% if page.meta.youtube_video_id %}
-<h2 id="nagranie">
-  🎥 Nagranie:<a class="headerlink" href="#nagranie" title="Permanent link">#</a>
-</h2>
-<br>
-<iframe width="80%" style="aspect-ratio: 16 / 9;" src="https://www.youtube-nocookie.com/embed/{{page.meta.youtube_video_id}}"
-  title="YouTube video player" frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen></iframe>
-{% endif %} 
-
-{% if page.meta.slides %}
-<h2 id="slajdy">
-  🗒️ Slajdy (<a href="{{page.meta.slides}}">Fullscreen</a>):<a class="headerlink" href="#slajdy" title="Permanent link">#</a>
-</h2>
-<br>
-<object data="{{page.meta.slides}}" type="application/pdf" width="80%" style="aspect-ratio: 16 / 9;"></object>
-{% endif %} 
-
 <!-- Source file information -->
 {% if page.meta and (
   page.meta.git_revision_date_localized or
