@@ -3,6 +3,8 @@
 ## Development
 
 ```
+# install pipenv if needed
+# pip install pipenv 
 pipenv install -d
 source $(pipenv --venv)/bin/activate
 mkdocs serve --watch-theme
