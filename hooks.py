@@ -17,6 +17,21 @@ def on_env(env: jinja2.Environment, **kwargs: Any) -> None:
 
 
 def transformPresentation(markdown, page, files, config):
+    if "website" in page.meta:
+        github = "https://github.com/"
+        if page.meta["website"].startswith(github):
+            repo = page.meta["website"].removeprefix(github)
+            button = (
+                f'\n<p markdown=1 align="center">[:fontawesome-brands-github: {repo}]({page.meta["website"]})'
+                "{ .md-button }</p>"
+            )
+        else:
+            button = (
+                f'\n<p markdown=1 align="center">[:fontawesome-solid-globe: {page.meta["website"].removeprefix("https://")}]({page.meta["website"]})'
+                "{ .md-button }</p>"
+            )
+        markdown += "\n## Strona projektu"
+        markdown += button
     baseUrl = f"{config.repo_url}/blob/main/content/"
     if "attachments" in page.meta:
         markdown += "\n##Załączniki od autora"
