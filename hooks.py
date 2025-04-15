@@ -29,7 +29,7 @@ def transformPresentation(markdown, page, files, config):
         yt = page.meta["youtube_url"]
         video_id = yt.split("=")[1].split("?")[0]
         markdown += '\n##🎥 Nagranie { data-toc-label="Nagranie" }'
-        markdown += f'\n<iframe width="80%" style="aspect-ratio: 16 / 9;" src="https://www.youtube-nocookie.com/embed/{video_id}"'
+        markdown += f'\n<iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube-nocookie.com/embed/{video_id}"'
         markdown += ' title="YouTube video player" frameborder="0"'
         markdown += ' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"'
         markdown += " allowfullscreen></iframe>"
@@ -39,7 +39,7 @@ def transformPresentation(markdown, page, files, config):
             f'\n##🗒️ Slajdy (<a href="{slides}">Fullscreen</a>)'
             ' { #slajdy data-toc-label="Slajdy" }'
         )
-        markdown += f'\n<object data="{slides}" type="application/pdf" width="80%" style="aspect-ratio: 16 / 9;"></object>'
+        markdown += f'\n<object data="{slides}" type="application/pdf" width="100%" style="aspect-ratio: 16 / 9;"></object>'
     return markdown
 
 
