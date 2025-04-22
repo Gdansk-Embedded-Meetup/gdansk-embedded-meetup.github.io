@@ -29,7 +29,7 @@ extra:
       link: https://github.com/Gdansk-Embedded-Meetup
       name: GitHub
   tags:
-    lightning-talk: lightning-talk
+    lightning talk: lightning-talk
     rust: rust
     random: random
     linux: linux
