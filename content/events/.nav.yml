@@ -1,7 +1,6 @@
 nav:
   - index.md
   - "*/"
-  - Archiwum: archive/ # make sure this folder is last
 
 sort:
   direction: desc
