@@ -1,9 +1,9 @@
 ---
-title: "#T30 Spotkanie Gdańsk Embedded Meetup"
+title: "#30 Spotkanie Gdańsk Embedded Meetup"
 date: 2025-05-06
 location: starter
 template: event.html
-# cover: static/cover.webp
+cover: static/cover.webp
 # meetup_url: https://www.meetup.com/gda%C5%84sk-embedded-meetup/events/TBD/
 # photos: https://drive.google.com/drive/folders/TBD?usp=drive_link
 ---

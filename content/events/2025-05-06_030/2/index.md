@@ -4,7 +4,7 @@ title: Czy mój miernik jest dobry? O metrologii, kalibracji i spójności pomia
 # slides: TBD.pdf
 # youtube_url: https://www.youtube.com/watch?v=TBD
 tags:
-    - random
+    - equipment
 # website: https://github.com/TBD/tbd
 # attachments:
 #     - folder/
