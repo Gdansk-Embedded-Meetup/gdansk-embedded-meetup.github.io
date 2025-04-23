@@ -52,10 +52,12 @@
 <img src="{{ page.meta.cover}}" alt="Cover">
 {% endif %} 
 
+{% if page.meta.meetup_url %}
 <p><a class="md-button" href="{{ page.meta.meetup_url }}">
   <span class="twemoji">{% include ".icons/fontawesome/brands/meetup.svg" %}</span> Wydarzenie na Meetup.com</a>
 </p>
 
+{% endif %}
 
 {{page.content}}
 
