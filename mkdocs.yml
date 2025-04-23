@@ -115,6 +115,7 @@ plugins:
   - search
   - tags
   - awesome-nav
+  - meta
 
 hooks:
   - hooks.py

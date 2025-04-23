@@ -2,6 +2,7 @@
 title: Spotkania
 template: event_list.html
 location: starter
+comments: false
 ---
 
 # 🎤 Spotkania
