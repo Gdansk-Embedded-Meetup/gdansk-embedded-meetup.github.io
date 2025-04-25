@@ -1,6 +1,8 @@
 ---
 title: "#TBD Spotkanie Gdańsk Embedded Meetup"
 date: 2099-01-01
+# start: "18:00"
+# end: "20:30"
 location: TBD
 template: event.html
 cover: static/cover.webp

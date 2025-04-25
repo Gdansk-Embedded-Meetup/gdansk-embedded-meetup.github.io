@@ -1,6 +1,8 @@
 ---
 title: "#30 Spotkanie Gdańsk Embedded Meetup"
 date: 2025-05-06
+start: "18:00"
+end: "20:30"
 location: starter
 template: event.html
 cover: static/cover.webp
