@@ -1,4 +1,8 @@
 {% extends "main.html" %}
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+<script>import { atcb_action } from "add-to-calendar-button";</script>
+{% endblock %}
 
 {% block styles %}
 {{ super() }}
@@ -51,13 +55,36 @@
 {% if page.meta.cover %}
 <img src="{{ page.meta.cover}}" alt="Cover">
 {% endif %} 
-
+<div>
 {% if page.meta.meetup_url %}
-<p><a class="md-button" href="{{ page.meta.meetup_url }}">
+<a class="md-button" href="{{ page.meta.meetup_url }}">
   <span class="twemoji">{% include ".icons/fontawesome/brands/meetup.svg" %}</span> Wydarzenie na Meetup.com</a>
-</p>
+
 {% endif %}
 
+{% if page.meta.start and page.meta.end %}
+<a class="md-button" id="my-default-button"> <span class="twemoji">{% include ".icons/fontawesome/solid/calendar.svg" %}</span> Dodaj do kalendarza!</a>
+
+<script type="application/javascript">
+  const config = {
+    name: "{{page.title}}",
+    description: "[url]{{config.site_url}}{{page.url}}[/url]",
+    url: "{{config.site_url}}{{page.url}}",
+    startDate: "{{page.meta.date}}",
+    startTime: "{{page.meta.start}}",
+    endTime: "{{page.meta.end}}",
+    location: "{{location.name}}, {{location.address}}",
+    options: ['Apple','Google','iCal','Outlook.com','Yahoo'],
+    timeZone: "Europe/Warsaw"
+  };
+  const button = document.getElementById('my-default-button');
+  if (button) {
+    button.addEventListener('click', () => atcb_action(config, button));
+  }
+</script>
+
+{% endif %}
+</div>
 {{page.content}}
 
 <!-- Comment system -->
