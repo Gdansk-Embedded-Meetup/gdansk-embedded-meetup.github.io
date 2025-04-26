@@ -4,7 +4,7 @@ date: 2025-05-06
 location: starter
 template: event.html
 cover: static/cover.webp
-# meetup_url: https://www.meetup.com/gda%C5%84sk-embedded-meetup/events/TBD/
+meetup_url: https://www.meetup.com/gda%C5%84sk-embedded-meetup/events/307455708/
 # photos: https://drive.google.com/drive/folders/TBD?usp=drive_link
 ---
 ## Szczegóły
