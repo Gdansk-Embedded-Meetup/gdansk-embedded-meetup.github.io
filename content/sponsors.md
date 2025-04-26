@@ -1,31 +1,115 @@
+<style>
+    
+.sponsor img {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+.sponsor {
+    background: white;
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#partners {
+    grid-template-columns: 1fr; /* Mobile-first: 1 column by default */
+}
+
+
+@media screen and (min-width: 40em) {
+  #partners {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+  }
+}
+
+#sponsors {
+    grid-template-columns: 1fr; /* Mobile-first: 1 column by default */
+}
+
+@media screen and (min-width: 40em) {
+  #sponsors {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on other screens */
+  }
+}
+
+</style>
+
 <!--
 Order:
 - Current long term sponsors (Ambient)
 - Past sponsors sorted by number of events
 -->
+<div class="grid" id="sponsors" markdown>
+[![ambient](static/ambient.webp)](https://ambientsystem.eu/pl/ "Ambient System")
+{ .sponsor }
 
-[![ambient](static/ambient.webp){ width=500 }](https://ambientsystem.eu/pl/ "Ambient System")
-[![solwit](static/solwit.webp){ width=500 }](https://solwit.com/ "Solwit")
-[![sii](static/sii.webp){ width=500 }](https://sii.pl/ "Sii")
-[![apator](static/apator.webp){ width=500 }](https://www.facebook.com/apatortelemetria/ "Apator Telemetria")
-[![ucgosu](static/ucgosu.webp){ width=500 }](https://www.ucgosu.pl/ "ucgosu.pl")
-[![3mdeb](static/3mdeb.webp){ width=500 }](https://3mdeb.com/pl/ "3mdeb") 
-[![amazon](static/amazon.webp){ width=500 }](https://www.linkedin.com/company/amazon-development-center/ "Amazon")
-[![goodbyte](static/goodbyte.webp){ width=500 }](https://www.goodbyte.pl/ "GoodByte")
-[![etteplan](static/etteplan.webp){ width=500 }](https://www.etteplan.com/pl "Etteplan")
-[![ismacontrolli](static/ismacontrolli.webp){ width=500 }](https://www.ismacontrolli.com/en/ "iSMA Controlli")
-[![kplabs](static/kplabs.webp){ width=500 }](https://kplabs.space/ "KP Labs")
-[![msalamon](static/msalamon.webp){ width=500 }](https://sklep.msalamon.pl/ "msalamon.pl")
-[![nordea](static/nordea.webp){ width=500 }](https://nordea.pl/ "Nordea")
-[![syderal](static/syderal.webp){ width=500 }](https://www.syderal.pl/ "Syderal Polska")
-[![unisystem](static/unisystem.webp){ width=500 }](https://unisystem.pl/ "Unisystem")
+[![solwit](static/solwit.webp)](https://solwit.com/ "Solwit")
+{ .sponsor }
 
-Partnerzy organizacyjni
-[![ucgosu](static/ucgosu.webp){ width=500 }](https://www.ucgosu.pl/ "ucgosu.pl")
-[![msalamon](static/msalamon.webp){ width=500 }](https://sklep.msalamon.pl/ "msalamon.pl")
-[![codeme](static/codeme.webp){ width=500 }](https://codeme.pl/ "Fundacja CODE:ME")
-[![hackerspace](static/hackerspace.webp){ width=500 }](https://hs3.pl// "Hackerspace Trójmiasto")
-[![st](static/st.webp){ width=500 }](https://www.st.com/content/st_com/en.html "ST Microelectronics")
-[![jetbrains](static/jetbrains.webp){ width=500 }](https://www.jetbrains.com/ "JetBrains")
+[![sii](static/sii.webp)](https://sii.pl/ "Sii")
+{ .sponsor }
 
+[![apator](static/apator.webp)](https://www.facebook.com/apatortelemetria/ "Apator Telemetria")
+{ .sponsor }
 
+[![ucgosu](static/ucgosu.webp)](https://www.ucgosu.pl/ "ucgosu.pl")
+{ .sponsor }
+
+[![3mdeb](static/3mdeb.webp)](https://3mdeb.com/pl/ "3mdeb")
+{ .sponsor }
+
+[![amazon](static/amazon.webp)](https://www.linkedin.com/company/amazon-development-center/ "Amazon")
+{ .sponsor }
+
+[![goodbyte](static/goodbyte.webp)](https://www.goodbyte.pl/ "GoodByte")
+{ .sponsor }
+
+[![etteplan](static/etteplan.webp)](https://www.etteplan.com/pl "Etteplan")
+{ .sponsor }
+
+[![ismacontrolli](static/ismacontrolli.webp)](https://www.ismacontrolli.com/en/ "iSMA Controlli")
+{ .sponsor }
+
+[![kplabs](static/kplabs.webp)](https://kplabs.space/ "KP Labs")
+{ .sponsor }
+
+[![msalamon](static/msalamon.webp)](https://sklep.msalamon.pl/ "msalamon.pl")
+{ .sponsor }
+
+[![nordea](static/nordea.webp)](https://nordea.pl/ "Nordea")
+{ .sponsor }
+
+[![syderal](static/syderal.webp)](https://www.syderal.pl/ "Syderal Polska")
+{ .sponsor }
+
+[![unisystem](static/unisystem.webp)](https://unisystem.pl/ "Unisystem")
+{ .sponsor }
+
+</div>
+## Partnerzy organizacyjni
+<div class="grid" id="partners" markdown>
+[![ucgosu](static/ucgosu.webp)](https://www.ucgosu.pl/ "ucgosu.pl")
+{ .sponsor }
+
+[![msalamon](static/msalamon.webp)](https://sklep.msalamon.pl/ "msalamon.pl")
+{ .sponsor }
+
+[![codeme](static/codeme.webp)](https://codeme.pl/ "Fundacja CODE:ME")
+{ .sponsor }
+
+[![hackerspace](static/hackerspace.webp)](https://hs3.pl// "Hackerspace Trójmiasto")
+{ .sponsor }
+
+[![st](static/st.webp)](https://www.st.com/content/st_com/en.html "ST Microelectronics")
+{ .sponsor }
+
+[![jetbrains](static/jetbrains.webp)](https://www.jetbrains.com/ "JetBrains")
+{ .sponsor }
+
+</div>
