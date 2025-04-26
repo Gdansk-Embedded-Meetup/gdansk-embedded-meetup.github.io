@@ -1,14 +1,15 @@
-name: CI/CD
-
+name: Deploy PR previews
+concurrency: preview-${{ github.ref }}
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
 jobs:
-  build:
-    name: Build
+  deploy-preview:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
@@ -30,9 +31,15 @@ jobs:
       - name: Build static site
         run: |
           pipenv run mkdocs build --strict
-      - uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
         with:
-          folder: dist
-          branch: gh-pages
-          clean-exclude: pr-preview
-          force: false
+          name: build
+          path: dist
+      - uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: dist
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+          action: auto
+          pages-base-url: https://gdansk-embedded-meetup.github.io/
