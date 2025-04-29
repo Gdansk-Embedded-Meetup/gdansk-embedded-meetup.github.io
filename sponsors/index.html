@@ -233,7 +233,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#work-in-progress" class="md-skip">
+        <a href="#partnerzy-organizacyjni" class="md-skip">
           Przejdź do treści
         </a>
       
@@ -662,9 +662,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#work-in-progress" class="md-nav__link">
+  <a href="#partnerzy-organizacyjni" class="md-nav__link">
     <span class="md-ellipsis">
-      Work in progress 🚧
+      Partnerzy organizacyjni
     </span>
   </a>
   
@@ -743,7 +743,79 @@
 
   <h1>💰 Sponsorzy</h1>
 
-<h2 id="work-in-progress">Work in progress 🚧<a class="headerlink" href="#work-in-progress" title="Permanent link">#</a></h2>
+<style>
+
+.sponsor img {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+.sponsor {
+    background: white;
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#partners {
+    grid-template-columns: 1fr; /* Mobile-first: 1 column by default */
+}
+
+
+@media screen and (min-width: 40em) {
+  #partners {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+  }
+}
+
+#sponsors {
+    grid-template-columns: 1fr; /* Mobile-first: 1 column by default */
+}
+
+@media screen and (min-width: 40em) {
+  #sponsors {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on other screens */
+  }
+}
+
+</style>
+
+<!--
+Order:
+- Current long term sponsors (Ambient)
+- Past sponsors sorted by number of events
+-->
+<div class="grid" id="sponsors">
+<p class="sponsor"><a href="https://ambientsystem.eu/pl/" title="Ambient System"><img alt="ambient" src="../static/ambient.webp" /></a></p>
+<p class="sponsor"><a href="https://solwit.com/" title="Solwit"><img alt="solwit" src="../static/solwit.webp" /></a></p>
+<p class="sponsor"><a href="https://sii.pl/" title="Sii"><img alt="sii" src="../static/sii.webp" /></a></p>
+<p class="sponsor"><a href="https://www.facebook.com/apatortelemetria/" title="Apator Telemetria"><img alt="apator" src="../static/apator.webp" /></a></p>
+<p class="sponsor"><a href="https://www.ucgosu.pl/" title="ucgosu.pl"><img alt="ucgosu" src="../static/ucgosu.webp" /></a></p>
+<p class="sponsor"><a href="https://3mdeb.com/pl/" title="3mdeb"><img alt="3mdeb" src="../static/3mdeb.webp" /></a></p>
+<p class="sponsor"><a href="https://www.linkedin.com/company/amazon-development-center/" title="Amazon"><img alt="amazon" src="../static/amazon.webp" /></a></p>
+<p class="sponsor"><a href="https://www.goodbyte.pl/" title="GoodByte"><img alt="goodbyte" src="../static/goodbyte.webp" /></a></p>
+<p class="sponsor"><a href="https://www.etteplan.com/pl" title="Etteplan"><img alt="etteplan" src="../static/etteplan.webp" /></a></p>
+<p class="sponsor"><a href="https://www.ismacontrolli.com/en/" title="iSMA Controlli"><img alt="ismacontrolli" src="../static/ismacontrolli.webp" /></a></p>
+<p class="sponsor"><a href="https://kplabs.space/" title="KP Labs"><img alt="kplabs" src="../static/kplabs.webp" /></a></p>
+<p class="sponsor"><a href="https://sklep.msalamon.pl/" title="msalamon.pl"><img alt="msalamon" src="../static/msalamon.webp" /></a></p>
+<p class="sponsor"><a href="https://nordea.pl/" title="Nordea"><img alt="nordea" src="../static/nordea.webp" /></a></p>
+<p class="sponsor"><a href="https://www.syderal.pl/" title="Syderal Polska"><img alt="syderal" src="../static/syderal.webp" /></a></p>
+<p class="sponsor"><a href="https://unisystem.pl/" title="Unisystem"><img alt="unisystem" src="../static/unisystem.webp" /></a></p>
+</div>
+<h2 id="partnerzy-organizacyjni">Partnerzy organizacyjni<a class="headerlink" href="#partnerzy-organizacyjni" title="Permanent link">#</a></h2>
+<div class="grid" id="partners">
+<p class="sponsor"><a href="https://www.ucgosu.pl/" title="ucgosu.pl"><img alt="ucgosu" src="../static/ucgosu.webp" /></a></p>
+<p class="sponsor"><a href="https://sklep.msalamon.pl/" title="msalamon.pl"><img alt="msalamon" src="../static/msalamon.webp" /></a></p>
+<p class="sponsor"><a href="https://codeme.pl/" title="Fundacja CODE:ME"><img alt="codeme" src="../static/codeme.webp" /></a></p>
+<p class="sponsor"><a href="https://hs3.pl//" title="Hackerspace Trójmiasto"><img alt="hackerspace" src="../static/hackerspace.webp" /></a></p>
+<p class="sponsor"><a href="https://www.st.com/content/st_com/en.html" title="ST Microelectronics"><img alt="st" src="../static/st.webp" /></a></p>
+<p class="sponsor"><a href="https://www.jetbrains.com/" title="JetBrains"><img alt="jetbrains" src="../static/jetbrains.webp" /></a></p>
+</div>
 
 
 
