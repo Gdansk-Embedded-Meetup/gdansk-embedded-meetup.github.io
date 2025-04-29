@@ -1,5 +1,7 @@
 {% extends "main.html" %}
+
 {% block scripts %}
+{{ super() }}
 <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
 <script>import { atcb_action } from "add-to-calendar-button";</script>
 {% endblock %}
@@ -63,7 +65,7 @@
 {% endif %}
 
 {% if page.meta.start and page.meta.end %}
-<a class="md-button" id="my-default-button"> <span class="twemoji">{% include ".icons/fontawesome/solid/calendar.svg" %}</span> Dodaj do kalendarza!</a>
+<a class="md-button" id="add-to-calendar-button"> <span class="twemoji">{% include ".icons/fontawesome/solid/calendar.svg" %}</span> Dodaj do kalendarza!</a>
 
 <script type="application/javascript">
   const config = {
@@ -77,7 +79,7 @@
     options: ['Apple','Google','iCal','Outlook.com','Yahoo'],
     timeZone: "Europe/Warsaw"
   };
-  const button = document.getElementById('my-default-button');
+  const button = document.getElementById('add-to-calendar-button');
   if (button) {
     button.addEventListener('click', () => atcb_action(config, button));
   }
