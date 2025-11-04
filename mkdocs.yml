@@ -15,12 +15,23 @@ extra:
     starter:
       name: Inkubator STARTER
       address: Lęborska 3b, 80-386 Gdańsk
+      osm_type: node
+      osm_id: 11201754057
     sztuka_wyboru:
       name: Sztuka Wyboru
       address: Juliusza Słowackiego 19, 80-257 Gdańsk
+      osm_type: node
+      osm_id: 3997800547
     nordea:
       name: Olivia Star (Nordea)
       address: Aleja Grunwaldzka 472C, Gdańsk
+      osm_type: way
+      osm_id: 396858778
+    d003:
+      name: Aula D003 Wydziału Matematyki, Fizyki i Informatyki Uniwersytetu Gdańskiego
+      address: Wita Stwosza 57, 80-308 Gdańsk 
+      osm_type: relation
+      osm_id: 6564077
   social:
     - icon: fontawesome/brands/meetup
       link: https://www.meetup.com/gda%C5%84sk-embedded-meetup/

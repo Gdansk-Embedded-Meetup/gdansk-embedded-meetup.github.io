@@ -49,7 +49,7 @@
     ·
     <span class="twemoji">{% include ".icons/fontawesome/solid/map-location.svg" %}</span>
     {% set location = config.extra.locations[page.meta.location] %}
-    {% set location_url = 'https://www.openstreetmap.org/search?query=' + location.address %}
+    {% set location_url = 'https://www.openstreetmap.org/' + location.osm_type + '/' + location.osm_id | string %}
     <a href="{{ location_url }}" title="{{ location.address }}">{{ location.name }}</a>
   </div>
 </div>
