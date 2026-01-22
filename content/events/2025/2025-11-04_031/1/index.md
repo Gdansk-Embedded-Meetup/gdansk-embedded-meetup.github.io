@@ -2,7 +2,7 @@
 template: presentation.html
 title: "Łamanie Zabezpieczeń Oprogramowania Wbudowanego: Od Deasemblacji do Kryptografii i AI"
 # slides: TBD.pdf
-# youtube_url: https://www.youtube.com/watch?v=TBD
+youtube_url: https://www.youtube.com/watch?v=uAKJVzJQ0LE
 tags:
     - debugging
     - security
