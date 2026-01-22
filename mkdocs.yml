@@ -32,6 +32,11 @@ extra:
       address: Wita Stwosza 57, 80-308 Gdańsk 
       osm_type: relation
       osm_id: 6564077
+    amber_expo:
+      name: Centrum Wystawienniczo – Kongresowe AmberExpo
+      address: Żaglowa 11, 80-560 Gdańsk 
+      osm_type: way
+      osm_id: 238077544
   social:
     - icon: fontawesome/brands/meetup
       link: https://www.meetup.com/gda%C5%84sk-embedded-meetup/
