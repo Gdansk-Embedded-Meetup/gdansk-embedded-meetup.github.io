@@ -2,7 +2,7 @@
 template: presentation.html
 title: Jak zostałem CEO w cudzej firmie
 # slides: TBD.pdf
-# youtube_url: https://www.youtube.com/watch?v=TBD
+youtube_url: https://www.youtube.com/watch?v=SKhqFK1tE7s
 tags:
     - startups
     - business

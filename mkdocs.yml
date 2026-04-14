@@ -69,6 +69,7 @@ extra:
     education: education
     web: web
     programming: programming
+    bluetooth: bluetooth
 
 theme:
   name: material
@@ -123,6 +124,7 @@ theme:
       web: fontawesome/solid/globe
       education: fontawesome/solid/user-graduate
       programming: fontawesome/solid/code
+      bluetooth: fontawesome/brands/bluetooth
 
 extra_css:
   - stylesheets/extra.css
