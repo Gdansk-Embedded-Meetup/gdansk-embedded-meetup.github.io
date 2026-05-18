@@ -8,7 +8,7 @@ dependencies = []
 dev = [
     "mkdocs[i18n]==1.6.1",
     "mkdocs-material==9.6.11",
-    "mkdocs-awesome-nav==3.1.1",
+    "mkdocs-awesome-nav==3.3.0",
 ]
 
 [tool.uv]
