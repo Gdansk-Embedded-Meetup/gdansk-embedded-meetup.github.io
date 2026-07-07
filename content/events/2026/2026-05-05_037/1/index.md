@@ -2,7 +2,7 @@
 template: presentation.html
 title: "ESP32-C3 jako ultra-tani host eMMC"
 # slides: TBD.pdf
-# youtube_url: https://www.youtube.com/watch?v=TBD
+youtube_url: https://www.youtube.com/watch?v=ZZTNMVtjmVM
 tags:
     - builds
     - hardware design

@@ -2,7 +2,7 @@
 template: presentation.html
 title: "From Chip to Platform: Enabling Scalable Edge AI with SoMs and Production Linux"
 # slides: TBD.pdf
-# youtube_url: https://www.youtube.com/watch?v=TBD
+youtube_url: https://www.youtube.com/watch?v=HNEOVOElHDo
 tags:
     - business
     - hardware design
