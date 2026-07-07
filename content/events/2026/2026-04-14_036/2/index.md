@@ -2,7 +2,7 @@
 template: presentation.html
 title: "Czy da się zatopić statek poprzez system embedded - omówienie zagrożeń i wyzwań w branży morskiej pod kątem cyber security"
 # slides: TBD.pdf
-# youtube_url: https://www.youtube.com/watch?v=TBD
+youtube_url: https://www.youtube.com/watch?v=4hDoxyF6Wq0
 tags:
     - security
     - maritime technology
