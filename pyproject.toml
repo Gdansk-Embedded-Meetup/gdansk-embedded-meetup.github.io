@@ -7,7 +7,7 @@ dependencies = []
 [dependency-groups]
 dev = [
     "mkdocs[i18n]==1.6.1",
-    "mkdocs-material==9.7.6",
+    "mkdocs-material==9.7.7",
     "mkdocs-awesome-nav==3.3.0",
 ]
 
