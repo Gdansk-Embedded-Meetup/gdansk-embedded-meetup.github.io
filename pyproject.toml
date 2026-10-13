@@ -1,7 +1,7 @@
 [project]
 name = "gdansk-embedded-meetup.github.io"
 version = "0.0.1"
-requires-python = "~=3.10"
+requires-python = ">=3.10, <3.15"
 dependencies = []
 
 [dependency-groups]
@@ -13,6 +13,7 @@ dev = [
 
 [tool.uv]
 package = false
+exclude-newer = "1 week" # hoping to not get hit by some random vuln
 
 [[tool.uv.index]]
 name = "pypi"
