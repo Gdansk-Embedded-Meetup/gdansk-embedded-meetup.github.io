@@ -70,6 +70,9 @@ extra:
     web: web
     programming: programming
     bluetooth: bluetooth
+  analytics:
+    provider: google
+    property: G-B8SMXEQ4SC
 
 theme:
   name: material
