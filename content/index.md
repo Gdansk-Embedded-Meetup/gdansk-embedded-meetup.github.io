@@ -44,6 +44,6 @@ Zajrzyj do sekcji [Sponsorzy](sponsors.md) aby dowiedzieć się więcej!
 
 
 !!! info "Chcesz wesprzeć naszą inicjatywę?"
-    Work in progress 🚧
+    Daj znać na kontakt@ucgosu.pl!
 
 We wszystkich innych kwestiach możesz uderzać do naszych [Organizatorów](organizers.md)
