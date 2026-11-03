@@ -1,6 +1,7 @@
 ---
 template: presentation.html
 title: "Embedded Linux: Simpler Than Ever — Bring Linux to Your Next Project"
+youtube_url: https://www.youtube.com/watch?v=P_qGJU5BZFE
 tags:
     - linux
 ---
