@@ -37,14 +37,19 @@ def transformPresentation(markdown, page, files, config):
         markdown += "\n##Załączniki od autora"
         for a in page.meta["attachments"]:
             markdown += f"\n- [{a}]({baseUrl}{page.url}{a})"
-    if "youtube_url" in page.meta:
+    if "youtube_url" in page.meta and page.meta["youtube_url"] != "TBD":
         yt = page.meta["youtube_url"]
-        video_id = yt.split("=")[1].split("?")[0]
-        markdown += '\n##🎥 Nagranie { data-toc-label="Nagranie" }'
-        markdown += f'\n<iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube-nocookie.com/embed/{video_id}"'
-        markdown += ' title="YouTube video player" frameborder="0"'
-        markdown += ' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"'
-        markdown += " allowfullscreen></iframe>"
+        try:
+            video_id = yt.split("=")[1].split("?")[0]
+        except (IndexError, AttributeError):
+            video_id = None
+
+        if video_id and video_id != "TBD":
+            markdown += '\n##🎥 Nagranie { data-toc-label="Nagranie" }'
+            markdown += f'\n<iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube-nocookie.com/embed/{video_id}"'
+            markdown += ' title="YouTube video player" frameborder="0"'
+            markdown += ' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"'
+            markdown += " allowfullscreen></iframe>"
     if "slides" in page.meta:
         slides = page.meta["slides"]
         markdown += (
