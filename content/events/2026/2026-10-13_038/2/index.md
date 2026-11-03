@@ -1,6 +1,7 @@
 ---
 template: presentation.html
 title: "Mój AI Software House — jak pracuję z zespołem agentów AI na co dzień"
+youtube_url: https://www.youtube.com/watch?v=m32xIRAw6iM
 tags:
     - AI
 ---
